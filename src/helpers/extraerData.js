@@ -2,7 +2,7 @@ export const extraerData = async (category, paginate) => {
 
     const apiKey = `X2RR0AI5hwS8aAcPiK1vzAYxoL4Mi4Qj`;
 
-    const url = `http://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURI(category)}&limit=${8}&offset=${paginate}`;
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURI(category)}&limit=${8}&offset=${paginate}`;
 
     const info = await fetch(url);
 
